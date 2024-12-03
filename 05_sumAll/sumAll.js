@@ -7,6 +7,8 @@ const sumAll = function (first, last) {
   if (
     typeof first !== "number" ||
     typeof last !== "number" ||
+    !Number.isInteger(first) ||
+    !Number.isInteger(last) ||
     first < 0 ||
     last < 0
   ) {
